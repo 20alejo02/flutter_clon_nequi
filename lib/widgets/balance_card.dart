@@ -21,7 +21,7 @@ class BalanceCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: height,
-      margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 18.0),
+      margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 18.0),
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.circular(8.0),
@@ -37,7 +37,7 @@ class BalanceCard extends StatelessWidget {
       child: Row(
         children: [
           SizedBox(width: 25), 
-          Icon(icon, size: 40, color: Colors.white),
+          Icon(icon, size: 30, color: Colors.white),
           SizedBox(width: 25),
           Expanded(
             child: Column(
@@ -47,7 +47,7 @@ class BalanceCard extends StatelessWidget {
                 Text(
                   title,
                   style: TextStyle(
-                    fontSize: 19,
+                    fontSize: 15,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
@@ -56,7 +56,7 @@ class BalanceCard extends StatelessWidget {
                 Text(
                   amount,
                   style: TextStyle(
-                    fontSize: 15,
+                    fontSize: 12,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
@@ -66,7 +66,7 @@ class BalanceCard extends StatelessWidget {
           ),
           if (trailingIcon != null) 
             Padding(
-              padding: const EdgeInsets.only(right: 18.0), 
+              padding: const EdgeInsets.only(right: 5.0), 
               child: Icon(
                 trailingIcon,
                 size: 24,
